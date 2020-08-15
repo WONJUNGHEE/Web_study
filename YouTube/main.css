@@ -71,6 +71,14 @@ header .logo {
   padding: var(--padding);
 }
 
+.info .myinfo {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-left: 50px;
+}
+
 .info .title {
   font-size: var(--font-large);
   display: -webkit-box;
@@ -87,7 +95,7 @@ header .logo {
 .info .view {
   font-size: var(--font-medium);
   color: var(--grey-dark-color);
-  margin: 20px;
+  margin-top: 5px;
 }
 
 .actions ul {
@@ -115,7 +123,43 @@ header .logo {
   background-color: red;
   border-radius: 2px;
   color: white;
+  width: 50px;
+  height: 30px;
+  font-size: var(--font-medium);
+  margin-top: 10px;
 }
+
+.profile img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+}
+
+.profile .meta {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+.channel {
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+
+.profile .script {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding);
+}
+
+.profile .script .scribers {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
 .post img {
   width: 150px;
   padding: var(--padding);
@@ -123,8 +167,14 @@ header .logo {
 
 .post li {
   display: flex;
+  border-bottom: 1px solid var(--grey-light-color);
 }
 
 .post .info {
   display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.post .next {
+  padding: 0 var(--padding);
 }
