@@ -1,0 +1,130 @@
+:root {
+  /*color*/
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+  /* size */
+  --padding: 12px;
+  --avatar-size: 36px;
+  /* font size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+ul {
+  list-style: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--white-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding-left: 30px;
+}
+
+header .logo {
+  font-size: var(--font-large);
+}
+
+#YouTudelogo i {
+  color: red;
+  size: var(--font-large);
+}
+
+.player {
+  position: sticky;
+  text-align: center;
+  top: 0;
+  background-color: var(--white-color);
+}
+
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+.info {
+  padding: var(--padding);
+}
+
+.info .title {
+  font-size: var(--font-large);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  margin-right: var(--padding);
+}
+.actions {
+  justify-content: space-between;
+  display: flex;
+}
+
+.info .view {
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin: 20px;
+}
+
+.actions ul {
+  display: flex;
+  padding: var(--padding);
+}
+
+.actions ul li button {
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding);
+  color: var(--grey-dark-color);
+  font-size: var(--font-small);
+}
+
+.actions ul li button i {
+  padding-right: 10px;
+  font-size: var(--font-medium);
+}
+.actions ul li button i.active {
+  color: var(--blue-color);
+}
+
+.profile button {
+  background-color: red;
+  border-radius: 2px;
+  color: white;
+}
+.post img {
+  width: 150px;
+  padding: var(--padding);
+}
+
+.post li {
+  display: flex;
+}
+
+.post .info {
+  display: flex;
+}
