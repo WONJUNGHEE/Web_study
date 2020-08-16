@@ -67,8 +67,10 @@ header .logo {
   max-width: 1000px;
 }
 
-.info {
+.nextinfo {
   padding: var(--padding);
+  display: flex;
+  flex-direction: column;
 }
 
 .info .myinfo {
@@ -78,13 +80,14 @@ header .logo {
   overflow: hidden;
   margin-left: 50px;
 }
-
-.info .title {
-  font-size: var(--font-large);
+.info .title.clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
+}
+.info .title {
+  font-size: var(--font-large);
   margin-right: var(--padding);
 }
 .actions {
@@ -160,9 +163,16 @@ header .logo {
   color: var(--grey-dark-color);
 }
 
-.post img {
-  width: 150px;
+.post li .img {
+  flex: 1 1 35%;
+}
+
+.post li .img img {
+  width: 100%;
   padding: var(--padding);
+}
+.post {
+  padding: 0 var(--padding);
 }
 
 .post li {
@@ -170,11 +180,34 @@ header .logo {
   border-bottom: 1px solid var(--grey-light-color);
 }
 
-.post .info {
+.post li .nextinfo {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+
+  flex: 1 1 60%;
 }
+
+.post li .more {
+  height: 100%;
+  flex: 1 1 5%;
+}
+
 .post .next {
   padding: 0 var(--padding);
+}
+.infoandpost {
+  display: flex;
+  flex-direction: column;
+}
+
+.post ul li .nextinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 758px) {
+  .infoandpost {
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
 }

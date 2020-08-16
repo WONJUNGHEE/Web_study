@@ -8,6 +8,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+    
     <title>Clone-coding</title>
   </head>
   <body>
@@ -26,81 +28,86 @@
     <section class="player">
         <video controls src="video/jeju_trip.mp4"></video>
     </section>
-    <section class="info">
-      <div class="title">
-        원정희의 유튜브 웹 따라 만들어보기 연습중입니다. 본 동영상은 예전에 만든
-        아두이노에 gps센서를 달아 gps 정보를 가지고 구글 지도에 위치를 보여주고
-        보내고자 하는 사람한테 정보를 주는 영상입니다.
-      </div>
-      <div class="actions">
-        <span class="view">조회수 1 * 2020.8.12</span>
-        <ul>
-          <li><button><i class="active far fa-thumbs-up"></i>12</button
-            ></li>
-          <li><button><i class="far fa-thumbs-down"></i>0</button
-            ></li>
-          <li><button><i class="fas fa-share"></i></button
-            ></li>
-          <li><button><i class="far fa-plus-square"></i>저장</button
-            ></li>
-          <li><button><i class="fas fa-ellipsis-h"></i></button
-            ></li>
-        </ul>
-      </div>
-      <div class="channel">
-      <div class="profile">
-        <div class="meta">
-        <img src="image/증명사진.jpg"/>
-        <div class="script">
-          <span class="name">원정희</span>
-          <span class="scribers" >100 구독</span>
-        </div>
-      </div>
-      
-      <button> 구독 </button>
-      </div>
-      <span class="myinfo"
-      >저는 1995년 11월 11월에 여주에서 태어나서 국민대학교 소프트웨어
-      학과를 재학중인 원정희 입니다. html + css + js 를 공부 후 리액트도
-      공부하고 있는 중입니다. 현재는 유튜브를 클론 코딩해보고 나중에
-      리액트로도 만들어볼 예정입니다.
-  </span>
-      </div>
-    </section>
     
-    <section class="post">
-      <div class="next">
-        다음 동영상
-      </div>
-      <ul>
-        <li>
-          <img src="img/img1.png" />
-          <div class="info">
-            <span class="title">제주 여행을 떠나자 1탄</span>
+
+    <div class="infoandpost">
+      <section class="info">
+        <span class="title clamp">
+          원정희의 유튜브 웹 따라 만들어보기 연습중입니다. 본 동영상은 예전에 만든
+          아두이노에 gps센서를 달아 gps 정보를 가지고 구글 지도에 위치를 보여주고
+          보내고자 하는 사람한테 정보를 주는 영상입니다.
+        </span>
+        <button class="moreBtn">더 보기</button>
+        <div class="actions">
+          <span class="view">조회수 1 * 2020.8.12</span>
+          <ul>
+            <li><button><i class="active far fa-thumbs-up"></i>12</button
+              ></li>
+            <li><button><i class="far fa-thumbs-down"></i>0</button
+              ></li>
+            <li><button><i class="fas fa-share"></i></button
+              ></li>
+            <li><button><i class="far fa-plus-square"></i>저장</button
+              ></li>
+            <li><button><i class="fas fa-ellipsis-h"></i></button
+              ></li>
+          </ul>
+        </div>
+        <div class="channel">
+        <div class="profile">
+          <div class="meta">
+          <img src="image/증명사진.jpg"/>
+          <div class="script">
             <span class="name">원정희</span>
-            <span class="views">12회</span>
+            <span class="scribers" >100 구독</span>
           </div>
-          <button class="more"><i class="fas fa-ellipsis-v"></i></button>
-        </li>
-        <li>
-          <img src="img/img1.png" />
-          <div class="info">
-            <span class="title">제주 여행을 떠나자 2탄</span>
-            <span class="name">원정희</span>
-            <span class="views">5회</span>
-          </div>
-          <button class="more"><i class="fas fa-ellipsis-v"></i></button>
-        </li>
-        <li>
-          <img src="img/img1.png" />
-          <div class="info">
-            <span class="title">제주 여행을 떠나자 3탄</span>
-            <span class="name">원정희</span>
-            <span class="views">111회</span>
-          </div>
-          <button class="more"><i class="fas fa-ellipsis-v"></i></button>
-        </li>
-      </ul>
-    </section>
+        </div>
+        
+        <button> 구독 </button>
+        </div>
+        <span class="myinfo"
+        >저는 1995년 11월 11월에 여주에서 태어나서 국민대학교 소프트웨어
+        학과를 재학중인 원정희 입니다. html + css + js 를 공부 후 리액트도
+        공부하고 있는 중입니다. 현재는 유튜브를 클론 코딩해보고 나중에
+        리액트로도 만들어볼 예정입니다.
+    </span>
+        </div>
+      </section>
+      
+      <section class="post">
+        <span class="next">
+          다음 동영상
+        </span>
+        <ul>
+          <li>
+            <div class="img"><img src="img/img1.png" /></div>
+            <div class="nextinfo">
+              <span class="title">제주 여행을 떠나자 1탄</span>
+              <span class="name">원정희</span>
+              <span class="views">12회</span>
+            </div>
+            <button class="more"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li>
+            <div class="img"><img src="img/img1.png" /></div>
+            <div class="nextinfo">
+              <span class="title">제주 여행을 떠나자 2탄</span>
+              <span class="name">원정희</span>
+              <span class="views">5회</span>
+              </div>
+            <button class="more"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li>
+            <div class="img"><img src="img/img1.png" /></div>
+            <div class="nextinfo">
+              <span class="title">제주 여행을 떠나자 3탄</span>
+              <span class="name">원정희</span>
+              <span class="views">111회</span>
+            </div>
+            <button class="more"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
