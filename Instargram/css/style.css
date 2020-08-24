@@ -33,6 +33,8 @@ textarea {
   font-size: 14px;
   line-height: 18px;
 }
+body {
+}
 /* main */
 
 .main {
@@ -48,7 +50,7 @@ main {
   border: 0 solid #000;
   flex-direction: column;
   order: 4;
-  height: 900px;
+  flex-grow: 1;
   background-color: #fafafa;
 }
 
@@ -58,6 +60,7 @@ main {
   justify-content: center;
   margin: 30px auto 0;
   max-width: 935px;
+  height: 100%;
   padding-bottom: 44px;
   width: 100%;
 }
@@ -69,7 +72,7 @@ main {
   flex-basis: 454px;
   height: 618px;
   margin-left: -35px;
-  margin-right: -15px;
+  margin-right: 10px;
   align-self: center;
   background-position: 0 0;
   display: flex;
@@ -84,6 +87,7 @@ main {
   justify-content: center;
   margin-top: 12px;
   max-width: 350px;
+  margin-left: 10px;
   flex-grow: 1;
   color: #262626;
 }
@@ -99,6 +103,8 @@ main {
 .login .title {
   margin: 22px auto 12px;
   font-size: 35px;
+  height: 51px;
+  background-position: 0 -130px;
 }
 .login_div {
   margin-bottom: 10px;
@@ -171,11 +177,180 @@ main {
   text-overflow: ellipsis;
 }
 
+.login_button_div {
+  margin-top: 8px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 8px;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-content: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.login_button {
+  background-color: rgba(0, 149, 246, 0.3);
+  opacity: 1;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  position: relative;
+  appearance: none;
+  padding: 5px 9px;
+  box-sizing: border-box;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  width: auto;
+}
+.line {
+  margin: 10px 40px 18px;
+  flex-direction: row;
+  display: flex;
+  box-sizing: border-box;
+  border: 0 solid #000;
+}
+.line1 {
+  flex-grow: 1;
+  background-color: #dbdbdb;
+  height: 1px;
+  top: 0.45em;
+  position: relative;
+  flex-shrink: 1;
+  flex-direction: column;
+  border: 0 solid #000;
+}
+.linestr {
+  color: #8e8e8e;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 18px;
+  line-height: 15px;
+  text-transform: uppercase;
+  border: 0 solid #000;
+}
+
+.facebook1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  border: 0 solid #000;
+  flex-direction: column;
+  margin-top: 8px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 8px;
+  flex: 0 0 auto;
+}
+.facebook1 button {
+  color: #0095f6;
+  display: inline;
+  padding: 0;
+  position: relative;
+  font-weight: 600;
+  appearance: none;
+  background: 0 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  width: auto;
+  user-select: none;
+  font-size: 14px;
+  line-height: 18px;
+  border: 0 solid #000;
+}
+
+.forget_password {
+  color: #00376b;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.no_account {
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+}
+
+.join {
+  display: block;
+  color: #8e8e8e;
+  font-weight: 300;
+  margin: -3px 0 -4px;
+  line-height: 18px;
+  flex-direction: column;
+}
+.join p {
+  color: #262626;
+  font-size: 14px;
+  margin: 15px;
+  text-align: center;
+  padding: 0;
+  margin: 15;
+}
+.join p a {
+  color: #0095f6;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.app_download p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+}
+
+.app_button {
+  margin: 10px 0 10px 0;
+  justify-content: center;
+  flex-direction: row;
+  border: 0 solid #000;
+}
+.app_button a {
+  color: #00376b;
+  text-decoration: none;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.app_button a img {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  max-width: 350px;
+}
 /* footer */
 footer {
   order: 5;
   padding: 0 20px;
   background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  flex-shrink: 0;
+  position: relative;
+  box-sizing: border-box;
+  border: 0 solid #000;
 }
 .footerdiv .footer_button {
   display: flex;
