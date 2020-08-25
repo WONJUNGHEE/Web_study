@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="to-do.css" />
+    <title>to-do list</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="title">정희 to-do list</div>
+      <div class="do-to">
+        <div class="inputdiv">
+          <input type="text" class="input-to-do" />
+          <button class="input_button">추가</button>
+        </div>
+        <div class="list">
+          <table class="list-table">
+            <thead class="table-head">
+              <tr>
+                <th>check</th>
+                <th>To-do List</th>
+              </tr>
+            </thead>
+            <tbody class="list-body">
+              <tr>
+                <td>
+                  <input type="checkbox" class="checkbox" />
+                </td>
+                <td>웹 개발 레벨 up</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="checkbox" />
+                </td>
+                <td>
+                  프론트 엔드 개발
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="change_button">
+            <button class="del_button">선택 삭제</button>
+            <button class="del_total">전체 삭제</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="to-do.js" defer></script>
+  </body>
+</html>
