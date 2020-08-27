@@ -1,0 +1,23 @@
+#modal1 {
+  display: none;
+  width: 130px;
+  padding: 20px 40px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+#modal1 .cancel {
+  border: 1px solid #888;
+  width: 50px;
+  padding: 3px 5px;
+  margin-top: 7px;
+}
